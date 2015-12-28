@@ -57,7 +57,8 @@ module.exports = yeoman.generators.Base.extend({
         {src: '_package.json', dst: 'package.json'},
         {src: 'webpack.config.js', dst: 'webpack.config.js'},
         {src: 'src/index.js', dst: 'src/index.js'},
-        {src: 'dist/app.js', dst: 'dist/app.js'}
+        {src: 'README.md', dst: 'README.md'},
+        {src: 'dist/app.js', dst: 'dist/' + this.props.projectName + '.js'}
       ].forEach(function (f) {
         this.fs.copyTpl(this.templatePath(f.src), this.destinationPath(f.dst), this.props);
       }.bind(this));

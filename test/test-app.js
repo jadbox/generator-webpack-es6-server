@@ -29,8 +29,9 @@ describe('webpack-es6-server:app', function () {
       '.gitignore',
       '.eslintrc',
       'webpack.config.js',
-      'dist/app.js',
-      'src/index.js'
+      'dist/my-project.js',
+      'src/index.js',
+      'README.md'
     ]);
   });
 
@@ -41,7 +42,8 @@ describe('webpack-es6-server:app', function () {
       ['package.json', /"author": "Jonathan Dunlap <jdunlap@outlook.com>",/],
       ['package.json', /"license": "Apache 2.0",/],
       ['package.json', /"main": "dist\/my-project.js",/],
-      ['webpack.config.js', /filename: "my-project.js",/]
+      ['webpack.config.js', /filename: "my-project.js",/],
+      ['README.md', /"my-project"/]
     ]);
   })
 });
