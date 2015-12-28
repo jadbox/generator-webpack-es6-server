@@ -19,7 +19,7 @@ module.exports = yeoman.generators.Base.extend({
     var prompts = [{
       type    : 'input',
       name    : 'projectName',
-      message : 'Project name',
+      message : 'Project name (all one word)',
       default : this.appname // Default to current folder name
     },
     {

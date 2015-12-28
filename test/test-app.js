@@ -38,7 +38,9 @@ describe('webpack-es6-server:app', function () {
       ['package.json', /"name": "my-project",/],
       ['package.json', /"description": "my project description",/],
       ['package.json', /"author": "Jonathan Dunlap <jdunlap@outlook.com>",/],
-      ['package.json', /"license": "Apache 2.0",/]
+      ['package.json', /"license": "Apache 2.0",/],
+      ['package.json', /"main": "dist\/my-project.js",/],
+      ['webpack.config.js', /filename: "my-project.js",/]
     ]);
   })
 });

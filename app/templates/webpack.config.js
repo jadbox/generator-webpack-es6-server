@@ -38,7 +38,7 @@ module.exports = {
       extensions: ['', '*.js']
     },*/
     output: {
-        filename: "app.js",
+        filename: "<%= projectName %>.js",
         libraryTarget: "commonjs",
         library: "",
         path: path.resolve(__dirname, 'dist')
