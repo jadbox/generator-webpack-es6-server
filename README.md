@@ -33,7 +33,7 @@ npm install -g generator-webpack-es6-server
 Finally, initiate the generator:
 
 ```bash
-yo webpack-es6-cssnext
+yo webpack-es6-server
 ```
 
 ### Getting To Know Yeoman
