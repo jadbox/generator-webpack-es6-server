@@ -1,8 +1,8 @@
-# generator-webpack-es6-cssnext [![Build Status](https://secure.travis-ci.org/ilkka/generator-webpack-es6-cssnext.png?branch=master)](https://travis-ci.org/ilkka/generator-webpack-es6-cssnext) [![Requirements Status](https://requires.io/github/ilkka/generator-webpack-es6-cssnext/requirements.svg?branch=master)](https://requires.io/github/ilkka/generator-webpack-es6-cssnext/requirements/?branch=master)
+# generator-webpack-es6-server 
 
 > [Yeoman](http://yeoman.io) generator
 
-This generator gives you a project scaffold where [webpack](http://webpack.github.io/) is used for bundling. You can write next generation [CSS](https://cssnext.github.io/) and [JS](https://babeljs.io/) with impunity and it is all transpiled for you so that browser support doesn't suffer.
+This generator gives you a project scaffold where [webpack](http://webpack.github.io/) is used for bundling. You can write next generation [JS ES6](https://babeljs.io/) with impunity and it is all transpiled for you so that browser support doesn't suffer.
 
 ## Getting Started
 
@@ -24,10 +24,10 @@ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-webpack-es6-cssnext from npm, run:
+To install generator-webpack-es6-server from npm, run:
 
 ```bash
-npm install -g generator-webpack-es6-cssnext
+npm install -g generator-webpack-es6-server
 ```
 
 Finally, initiate the generator:

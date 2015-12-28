@@ -1,8 +1,12 @@
-require('../css/main.css');
+exports.handler = function(event, context) {
+	const f = x => "hello " + x;
+	console.log( f("world!") )
+}
 
-const WHO = 'JS';
-let greeter = (who) => 'Hello from ' + who + '!';
-
-document.getElementById('app').appendChild(
-    document.createTextNode(greeter(WHO))
-);
+// Local direct test case
+if(!module.parent) {
+	exports.handler({}, 
+		{ done: (err, x) => 
+			console.log(`${err}, ${x}`) 
+		} );
+}
