@@ -1,0 +1,30 @@
+{
+  "name": "generator-webpack-es6-server",
+  "version": "1.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "https://github.com/jadbox/generator-webpack-es6-server",
+  "author": {
+    "name": "Jonathan Dunlap",
+    "email": "jdunlap@outlook.com",
+    "url": "https://github.com/jadbox"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "0.21.1",
+    "chalk": "1.1.1",
+    "yosay": "1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "2.3.4"
+  }
+}
