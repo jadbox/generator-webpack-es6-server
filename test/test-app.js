@@ -27,6 +27,7 @@ describe('webpack-es6-server:app', function () {
       '.jshintrc',
       '.jscsrc',
       '.gitignore',
+      '.eslintrc',
       'webpack.config.js',
       'dist/app.js',
       'src/index.js'

@@ -64,7 +64,7 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     projectfiles: function () {
-      var dotfiles = ['editorconfig', 'jshintrc', 'jscsrc', 'gitignore'];
+      var dotfiles = ['editorconfig', 'jshintrc', 'jscsrc', 'gitignore', 'eslintrc'];
       dotfiles.forEach(function (dotfile) {
         this.fs.copy(this.templatePath(dotfile), this.destinationPath('.' + dotfile));
       }.bind(this));
