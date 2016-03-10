@@ -20,7 +20,7 @@ module.exports = yeoman.generators.Base.extend({
       type    : 'input',
       name    : 'projectName',
       message : 'Project name (all one word)',
-      default : this.appname // Default to current folder name
+      default : this.appname.replace(' ', '-') // Default to current folder name
     },
     {
       type    : 'input',
@@ -58,7 +58,8 @@ module.exports = yeoman.generators.Base.extend({
         {src: 'webpack.config.js', dst: 'webpack.config.js'},
         {src: 'src/index.js', dst: 'src/index.js'},
         {src: 'README.md', dst: 'README.md'},
-        {src: 'dist/app.js', dst: 'dist/' + this.props.projectName + '.js'}
+        {src: 'dist/app.js', dst: 'dist/' + this.props.projectName + '.js'},
+        {src: 'test/test.js', dst: 'test/test.js'}
       ].forEach(function (f) {
         this.fs.copyTpl(this.templatePath(f.src), this.destinationPath(f.dst), this.props);
       }.bind(this));

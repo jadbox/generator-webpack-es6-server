@@ -43,7 +43,8 @@ describe('webpack-es6-server:app', function () {
       ['package.json', /"license": "Apache 2.0",/],
       ['package.json', /"main": "dist\/my-project\.js",/],
       ['webpack.config.js', /filename: "my-project\.js",/],
-      ['README.md', /dist\/my-project.js/]
+      ['README.md', /dist\/my-project.js/],
+      ['test/test.js', /my-project/]
     ]);
   })
 });

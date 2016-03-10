@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node dist/<%= projectName %>.js",
     "build": "webpack --config webpack.config.js  --progress --colors --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --harmony -R spec -t 5000 test/*.js"
   },
   "main": "dist/<%= projectName %>.js",
   "author": "<%= authorName %> <<%= authorEmail %>>",
